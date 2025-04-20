@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #4b0082;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  .background {
+   background: url("C:\Users\aatma\Downloads\img_ecse.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  
+  .title {
+    color: white;
+    background: rgba(128, 0, 128, 0.6);
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-section,
+  .education-section,
+  .skills-section,
+  .contact-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .about-section h2,
+  .education-section h2,
+  .skills-section h2,
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #4b0082;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p,
+  .contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .education-entry {
+    margin-bottom: 25px;
+  }
+  
+  .education-entry h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .education-entry p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .skills-section p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+      padding: 15px 30px;
+    }
+  
+    .about-section h2,
+    .education-section h2,
+    .skills-section h2,
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-section p,
+    .education-entry p,
+    .skills-section p,
+    .contact-section p {
+      font-size: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
